@@ -84,15 +84,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            style="@style/viewParent"
             android:id="@+id/al_forgot_password"
+            style="@style/viewParent"
             android:layout_gravity="end"
             android:layout_marginTop="10dp"
+            android:onClick="ResetPassword"
             android:text="Forgot Password?"
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/newsMoreTextSize" />
 
-        <Button
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintWidth_percent=".8"
